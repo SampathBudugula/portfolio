@@ -1,0 +1,1164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:darkgrey;
+}
+
+header{
+    width:100%;
+    background:#1e293b;
+    color:white;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:orange;
+}
+.hero{
+    width:90%;
+    margin:50px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    min-height:500px;
+}
+
+.left{
+    flex:1;
+}
+
+.left h1{
+    font-size:55px;
+    margin:10px 0;
+    color: navy;
+}
+
+.left h2{
+    color:royalblue;
+}
+
+.left p{
+    margin:20px 0;
+    line-height:28px;
+    color: green;
+}
+
+button{
+    padding:12px 30px;
+    background:royalblue;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.right img{
+    width:350px;
+    border-radius:50%;
+}
+
+
+section{
+    width:90%;
+    margin:60px auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+.about{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.image img{
+    width:300px;
+    border-radius:15px;
+}
+
+.content{
+    flex:2;
+}
+
+.content p{
+    margin-top:20px;
+    line-height:28px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.box{
+    background:#2563eb;
+    color:white;
+    padding:18px 35px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+#education{
+    width:90%;
+    margin:60px auto;
+}
+
+.title{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:40px;
+}
+
+.education-container{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    flex-wrap:wrap;
+    gap:30px;
+    
+}
+
+.education-card{
+    width:420px;
+    background:#ffffff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+    border-left:5px solid royalblue;
+    background-color: lightskyblue;
+}
+
+.education-card h3{
+    color:royalblue;
+    margin-bottom:10px;
+}
+
+.education-card h4{
+    color:#444;
+    margin-bottom:15px;
+}
+
+.education-card p{
+    margin:10px 0;
+    line-height:24px;
+}
+
+.projects{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    justify-content:center;
+    align-items:stretch;   
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.card{
+    width:330px;
+    min-height:430px;      
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;         
+    object-fit:cover;      
+}
+
+.card h3{
+    margin:20px 15px 10px;
+    font-size:22px;
+}
+
+.card p{
+    margin:0 15px 20px;
+    line-height:26px;
+    flex-grow:1;           
+}
+
+.contact{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.footer{
+    width:100%;
+    background:goldenrod;
+    color:#555;
+    margin-top:60px;
+    font-family:Arial, sans-serif;
+}
+
+.footer-top{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.footer-top p{
+    font-size:16px;
+}
+
+.social-icons a{
+    color:#222;
+    font-size:22px;
+    margin-left:20px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:orangered;
+}
+
+.footer hr{
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+.footer-content{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+    padding:40px 20px;
+}
+
+.footer-box h3{
+    margin-bottom:20px;
+    color:#222;
+    font-size:20px;
+}
+
+.footer-box p{
+    line-height:28px;
+    font-size:15px;
+}
+
+.footer-box ul{
+    list-style:none;
+}
+
+.footer-box ul li{
+    margin-bottom:15px;
+}
+
+.footer-box ul li a{
+    color:#666;
+    text-decoration:none;
+}
+
+.footer-box ul li a:hover{
+    color:orangered;
+}
+
+.footer-box i{
+    color:orangered;
+    margin-right:8px;
+}
+
+.copyright{
+    background:#ececec;
+    text-align:center;
+    padding:18px;
+    font-size:15px;
+}
+
+.copyright span{
+    font-weight:bold;
+    color:#000;
+}
+
+@media(max-width:768px){
+
+.footer-top{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+}
+
+.footer-content{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.social-icons a{
+    margin:0 10px;
+}
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container,
+.hero,
+section,
+#education,
+.projects {
+    max-width: 1400px;
+}
+
+/* =========================================================
+   FLIPKART-STYLE RESPONSIVE DESIGN
+   Fluid layout + major breakpoints
+========================================================= */
+
+
+/* =========================================================
+   DEFAULT / DESKTOP
+   1200px+
+========================================================= */
+
+.container,
+.hero,
+section,
+#education,
+.projects {
+    width: 90%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1600px+
+========================================================= */
+
+@media (min-width: 1600px) {
+
+    .container,
+    .hero,
+    section,
+    #education,
+    .projects {
+        width: 88%;
+        max-width: 1500px;
+    }
+
+    .hero {
+        gap: 70px;
+    }
+
+    .left h1 {
+        font-size: 60px;
+    }
+
+    .right img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .projects {
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   DESKTOP
+   1200px - 1599px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+    .container,
+    .hero,
+    section,
+    #education,
+    .projects {
+        width: 90%;
+        max-width: 1400px;
+    }
+
+    .hero {
+        gap: 50px;
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+   992px - 1199px
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .container,
+    .hero,
+    section,
+    #education,
+    .projects {
+        width: 92%;
+        max-width: 1100px;
+    }
+
+    .container {
+        padding: 18px 0;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        gap: 30px;
+    }
+
+    .left h1 {
+        font-size: 45px;
+    }
+
+    .left h2 {
+        font-size: 22px;
+    }
+
+    .left p {
+        line-height: 25px;
+    }
+
+    .right img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .education-card {
+        width: 400px;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL LAPTOP / LARGE TABLET
+   768px - 991px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .container,
+    .hero,
+    section,
+    #education,
+    .projects {
+        width: 92%;
+    }
+
+
+    /* Header */
+
+    .container {
+        gap: 20px;
+    }
+
+    nav {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: flex-end;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        gap: 25px;
+
+        min-height: 450px;
+    }
+
+    .left h1 {
+        font-size: 38px;
+
+        line-height: 45px;
+    }
+
+    .left h2 {
+        font-size: 20px;
+    }
+
+    .left p {
+        font-size: 14px;
+
+        line-height: 24px;
+    }
+
+    .right img {
+        width: 260px;
+
+        height: 260px;
+    }
+
+
+    /* About */
+
+    .about {
+        gap: 25px;
+    }
+
+    .image img {
+        width: 240px;
+    }
+
+
+    /* Education */
+
+    .education-card {
+        width: 45%;
+    }
+
+
+    /* Projects */
+
+    .card {
+        width: 300px;
+    }
+
+
+    /* Footer */
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   576px - 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .container,
+    .hero,
+    section,
+    #education,
+    .projects {
+        width: 92%;
+    }
+
+
+    /* Header */
+
+    .container {
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 35px;
+
+        min-height: auto;
+
+        padding: 50px 0;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left h1 {
+        font-size: 42px;
+
+        line-height: 50px;
+    }
+
+    .left h2 {
+        font-size: 22px;
+    }
+
+    .left p {
+        font-size: 15px;
+
+        line-height: 25px;
+    }
+
+    .right img {
+        width: 270px;
+
+        height: 270px;
+    }
+
+
+    /* About */
+
+    .about {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .image img {
+        width: 230px;
+    }
+
+
+    /* Skills */
+
+    .skills {
+        gap: 15px;
+    }
+
+
+    /* Education */
+
+    .education-card {
+        width: 100%;
+    }
+
+
+    /* Projects */
+
+    .card {
+        width: 330px;
+
+        max-width: 100%;
+    }
+
+
+    /* Contact */
+
+    .contact {
+        gap: 25px;
+
+        text-align: center;
+    }
+
+
+    /* Footer */
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   BELOW 576px
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .container,
+    .hero,
+    section,
+    #education,
+    .projects {
+        width: 92%;
+    }
+
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    .container {
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 12px;
+
+        text-align: center;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    nav {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 30px;
+
+        min-height: auto;
+
+        padding: 45px 0;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left h3 {
+        font-size: 16px;
+    }
+
+    .left h1 {
+        font-size: 34px;
+
+        line-height: 42px;
+    }
+
+    .left h2 {
+        font-size: 19px;
+
+        line-height: 26px;
+    }
+
+    .left p {
+        font-size: 14px;
+
+        line-height: 24px;
+
+        margin: 15px 0;
+    }
+
+    button {
+        padding: 11px 25px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right img {
+        width: 220px;
+
+        height: 220px;
+    }
+
+
+    /* =====================================================
+       SECTION
+    ===================================================== */
+
+    section,
+    #education {
+        margin-top: 60px;
+
+        margin-bottom: 60px;
+    }
+
+    .title {
+        font-size: 29px;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* =====================================================
+       ABOUT
+    ===================================================== */
+
+    .about {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 25px;
+    }
+
+    .image img {
+        width: 200px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content p {
+        font-size: 14px;
+
+        line-height: 24px;
+    }
+
+
+    /* =====================================================
+       SKILLS
+    ===================================================== */
+
+    .skills {
+        gap: 10px;
+    }
+
+    .box {
+        padding: 12px 18px;
+
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       EDUCATION
+    ===================================================== */
+
+    .education-container {
+        gap: 20px;
+    }
+
+    .education-card {
+        width: 100%;
+
+        padding: 22px;
+    }
+
+    .education-card h3 {
+        font-size: 19px;
+    }
+
+    .education-card h4 {
+        font-size: 14px;
+    }
+
+    .education-card p {
+        font-size: 13px;
+
+        line-height: 23px;
+    }
+
+
+    /* =====================================================
+       PROJECTS
+    ===================================================== */
+
+    .projects {
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+
+        min-height: 400px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+
+        line-height: 24px;
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    .contact {
+        flex-direction: column;
+
+        gap: 18px;
+
+        padding: 25px;
+
+        text-align: center;
+
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer-top {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 15px;
+    }
+
+    .social-icons {
+        display: flex;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   BELOW 360px
+========================================================= */
+
+@media (max-width: 359px) {
+
+    .container,
+    .hero,
+    section,
+    #education,
+    .projects {
+        width: 94%;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 7px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        gap: 25px;
+    }
+
+    .left h1 {
+        font-size: 28px;
+
+        line-height: 35px;
+    }
+
+    .left h2 {
+        font-size: 16px;
+    }
+
+    .left p {
+        font-size: 12px;
+
+        line-height: 21px;
+    }
+
+    .right img {
+        width: 180px;
+
+        height: 180px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .image img {
+        width: 170px;
+    }
+
+    .box {
+        padding: 10px 14px;
+
+        font-size: 11px;
+    }
+
+    .education-card {
+        padding: 18px;
+    }
+
+    .card {
+        min-height: 380px;
+    }
+
+    .contact {
+        padding: 18px;
+
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   LANDSCAPE MOBILE
+========================================================= */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .hero {
+        min-height: auto;
+
+        padding: 40px 0;
+    }
+
+    .right img {
+        width: 180px;
+
+        height: 180px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+    }
+
+}
+
